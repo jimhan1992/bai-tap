@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>[Bài tập] Tạo form lấy survey khách hàng</title>
+    <style>
+        table {
+            width:100%;
+        }
+        table, th, td {
+            border: 1px solid darkgray;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }
+        tr:nth-child(odd) {
+            background-color: #f5f5f5;
+        }
+        th {
+            background-color: #6c6666;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
 <form action="lay-survey-khach-hang.html" method="get">
 <h2>Market Research Survey</h2>
     <p>Please take a few moments to complete this satisfaction survey</p>
     <h4>What is your age rabe?</h4>
-        <select name="tuoi">
+        <label><select name="tuoi">
             <option value="18-24">18 - 24   </option>
             <option value="25-34">25 - 35   </option>
             <option value="35-50">35 - 50   </option>
-            <option valeu="50+">50 +    </option>
-        </select>
+            <option value="50+">50 +    </option>
+        </select></label>
     <h4>What is your yearly income range?</h4>
-        <select name="thunhap">
+        <label><select name="thunhap">
             <option value="$0 - $25,000">$0 - $25,000</option>
             <option value="$25,001 - $50,000">$25,001 - $50,000</option>
             <option value="$50,001 - $100,000">$50,001 - $100,000</option>
             <option value="$100,000+">$100,000+</option>
-        </select>
+        </select></label>
     <h4> Gender</h4>
         <label><input type="radio" name="gender">Male</label><br>
         <label><input type="radio" name="gender">Female</label>
@@ -34,17 +55,17 @@
         <label><input type="radio" name="date">Weekly</label><br>
         <label><input type="radio" name="date">Monthly</label>
     <h4>What would you pay for the new product?</h4>
-        $ <input type="text" name="dola" size="10"> . <input type="text" name="cent" size="5">
+        $ <label><input type="text" name="dola" size="10"></label> . <label><input type="text" name="cent" size="5"></label>
     <h4>What features would you like to see in the new product.</h4>
-        <textarea rows="4" cols="50"></textarea>
+       <label> <textarea rows="4" cols="50" style="width: 100%"></textarea></label>
     <h4>Please rate your level of agreement with the following statements.</h4>
     <table>
         <tr>
             <th></th>
-            <th>Strongly Disagree</th>
-            <th>Disagree</th>
-            <th>Agree</th>
-            <th>Strongly Agree</th>
+            <th style="width: 10%">Strongly Disagree</th>
+            <th style="width: 10%">Disagree</th>
+            <th style="width: 10%">Agree</th>
+            <th style="width: 10%">Strongly Agree</th>
         </tr>
         <tr>
             <td>Our products are priced fairly.</td>
@@ -71,31 +92,6 @@
     <br>
     <br>
     <input type="submit" name="submit" value="Submit">
-
 </form>
-<style>
-    table {
-        width:100%;
-    }
-    table, th, td {
-        border: 1px solid darkgray;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 5px;
-        text-align: center;
-    }
-    tr:nth-child(even) {
-        background-color: #eee;
-    }
-    tr:nth-child(odd) {
-        background-color:#fff;
-    }
-    th {
-        background-color: #6c6666;
-        color: white;
-    }
-
-</style>
 </body>
 </html>

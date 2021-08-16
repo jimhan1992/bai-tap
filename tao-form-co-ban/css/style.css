@@ -9,7 +9,7 @@ table {
 
 td, th {
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(28, 27, 27);
 }
 th{
     font-family: 'Patua One', cursive;

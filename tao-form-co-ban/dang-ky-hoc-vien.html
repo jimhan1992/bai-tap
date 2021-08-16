@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <title>Đăng ký học viên</title>
 </head>
-<body style="background-color: #f6c83a">
+<body>
 <form action="" method="post">
-    <table>
+    <table style="background-color: #f6c83a; width: 400px;">
         <tr style="background-color: aqua">
             <th style="color: blue" colspan="2">ĐĂNG KÝ HỌC VIÊN</th>
         </tr>
         <tr>
             <td style="color: blue">Họ và tên</td>
-            <td><input name="youname" size="30" type="text"></td>
+            <td>
+                <label><input name="youname" size="30" type="text"><label>
+            </td>
         </tr>
         <tr>
             <td style="color: blue">Ngày sinh</td>
-            <td><input type="text" name="day" size="20"></td>
+            <td>
+                <label><input type="text" name="day" size="20"></label>
+            </td>
         </tr>
         <tr>
             <td style="color: blue">Giới tính</td>
@@ -28,19 +32,19 @@
         <tr>
             <td style="color: blue">Địa chỉ</td>
             <td>
-                <textarea cols="30" rows="3"></textarea>
+                <label><textarea cols="30" rows="3"></textarea></label>
             </td>
         </tr>
         <tr>
             <td style="color: blue">Lớp</td>
             <td>
-                <select name="class">
+                <label><select name="class">
                     <option value="CN">-Chọn lớp-</option>
                     <option value="T">Toán</option>
                     <option value="L">Lý</option>
                     <option value="H">Hóa</option>
                         <option value="TA">Tiếng anh</option>
-                </select>
+                </select></label>
             </td>
         </tr>
         <tr>
